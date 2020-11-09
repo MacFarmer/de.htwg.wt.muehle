@@ -40,4 +40,8 @@ class MuehleController @Inject()(cc: ControllerComponents) extends AbstractContr
   def history= Action {
     Ok(views.html.history())
   }
+
+//   def muehle = Action {
+//    Ok(muehleAsText)
+//  }
 }
