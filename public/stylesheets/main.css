@@ -42,12 +42,14 @@ h2 {
     margin-top: 0px;
     background-color: #DAA520;
     background-image: linear-gradient(to bottom, rgba(218,165,32,1), rgba(245,222,179,1));
+    padding-bottom: 20px;
 }
 .main-footer {
     text-align: center;
    /* background: #DAA520;*/
     background-color: #DAA520;
     background-image: linear-gradient(to top, rgba(218,165,32,1), rgba(245,222,179,1));
+    padding-top: 10px;
 }
 .gamecontainer {
     text-align: center;
@@ -64,6 +66,7 @@ h2 {
 
 .container {
     text-align: center;
+    padding-top: 60px;
 }
 .gamecontainer div {
     text-align: center;
@@ -262,10 +265,9 @@ figure.mitte figcaption {
 /*Game-Buttons*/
 .gg-play-button {
     box-sizing: border-box;
-    position: center;
     display: block;
     transform: scale(var(--ggs,1));
-    width: 22px;
+    width: 44px;
     height: 22px;
     color: green;
 }
@@ -282,35 +284,7 @@ figure.mitte figcaption {
     top: 6px;
     left: 9px
 }
-.gg-push-down {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 2px;
-    height: 16px;
-    background: currentColor;
-}
-.gg-push-down::after,
-.gg-push-down::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 12px;
-    height: 2px;
-    border-bottom: 2px solid;
-    bottom: -5px;
-    left: -5px
-}
-.gg-push-down::after {
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid;
-    transform: rotate(45deg);
-    left: -3px;
-    bottom: 0
-}
+
 .gg-redo {
     box-sizing: border-box;
     position: relative;
@@ -367,7 +341,7 @@ figure.mitte figcaption {
     width: 22px;
     height: 22px;
     border: 2px solid;
-    border-radius: 40px
+    border-radius: 40px;
 }
 .gg-close-o::after,
 .gg-close-o::before {
@@ -385,6 +359,35 @@ figure.mitte figcaption {
 }
 .gg-close-o::after {
     transform: rotate(-45deg)
+}
+.gg-push-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 2px;
+    height: 16px;
+    background: currentColor;
+}
+.gg-push-down::after,
+.gg-push-down::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    border-bottom: 2px solid;
+    bottom: -5px;
+    left: -5px
+}
+.gg-push-down::after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: -3px;
+    bottom: 0
 }
 .gg-software-upload {
     box-sizing: border-box;
@@ -424,24 +427,21 @@ figure.mitte figcaption {
     left: 5px;
     bottom: 3px
 }
+.btn {
+  height: 60px;
+}
 
 .btn-group .btn {
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
+  padding: 10px 30px;
+  font-size: 12px;
   cursor: pointer;
   float: left;
   background-color:#DAA520
 }
 .btn-group .btn:not(:last-child) {
-  border-right: none; /* Prevent double borders */
+    border-right: none; /* Prevent double borders */
 }
 .btn-group .btn:hover {
   color:#FFFFFF;
   background-color:#8B4513;
-}
-
-.btn .gg-software-upload{
-    border-right: solid;
 }
