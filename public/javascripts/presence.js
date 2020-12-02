@@ -8,7 +8,7 @@ function displayWR(i) {
       myFunction(this, i);
     }
   };
-  xmlhttp.open("GET", "World_Rank.xml", true);
+  xmlhttp.open("GET", "xml/World_Rank.xml", true);
   xmlhttp.send();
 }
 

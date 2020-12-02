@@ -20,9 +20,10 @@ GET        /save               controllers.MuehleController.save
 
 GET        /load                controllers.MuehleController.load
 
-GET        /move                controllers.MuehleController.move
-
 GET        /history             controllers.MuehleController.history
+
+GET        /presence             controllers.MuehleController.presence
+
 
 
 # Map static resources from the /public folder to the /assets URL path
