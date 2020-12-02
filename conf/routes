@@ -20,6 +20,8 @@ GET        /save               controllers.MuehleController.save
 
 GET        /load                controllers.MuehleController.load
 
+GET        /move                controllers.MuehleController.move
+
 GET        /history             controllers.MuehleController.history
 
 

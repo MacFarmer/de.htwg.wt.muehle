@@ -1,0 +1,62 @@
+<Catalog>
+    <Player>
+        <Rank>1</Rank>
+        <Name>Bandy György</Name>
+        <Title>GM</Title>
+        <Melo>1374</Melo>
+    </Player>
+    <Player>
+        <Rank>2</Rank>
+        <Name>Flury Alain</Name>
+        <Title>GM</Title>
+        <Melo>1371</Melo>
+    </Player>
+    <Player>
+        <Rank>3</Rank>
+        <Name>Andraschenko Karl-Heinz</Name>
+        <Title>GM</Title>
+        <Melo>1334</Melo>
+    </Player>
+    <Player>
+        <Rank>4</Rank>
+        <Name>Volmann Ferenc</Name>
+        <Title>MM</Title>
+        <Melo>1325</Melo>
+    </Player>
+    <Player>
+        <Rank>5</Rank>
+        <Name>Korn Roman</Name>
+        <Title></Title>
+        <Melo>1323</Melo>
+    </Player>
+    <Player>
+        <Rank>6</Rank>
+        <Name>Erni Simon</Name>
+        <Title></Title>
+        <Melo>1317</Melo>
+    </Player>
+    <Player>
+        <Rank>7</Rank>
+        <Name>Santa Elemer</Name>
+        <Title></Title>
+        <Melo>1313</Melo>
+    </Player>
+    <Player>
+        <Rank>8</Rank>
+        <Name>Lehner Daniel</Name>
+        <Title>GM</Title>
+        <Melo>1303</Melo>
+    </Player>
+    <Player>
+        <Rank>9</Rank>
+        <Name>Klugsberger Ernestine</Name>
+        <Title></Title>
+        <Melo>1288</Melo>
+    </Player>
+    <Player>
+        <Rank>10</Rank>
+        <Name>Orban Csaba</Name>
+        <Title></Title>
+        <Melo>1287</Melo>
+    </Player>
+</Catalog>

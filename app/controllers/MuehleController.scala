@@ -45,6 +45,12 @@ class MuehleController @Inject()(cc: ControllerComponents) extends AbstractContr
     gameController.loadGame()
     Ok(views.html.muehle(gameController))
   }
+
+  /*def move = Action {
+    gameController.moveStone(pos_start, pos_end)
+    Ok(views.html.muehle(gameController))
+  }*/
+
   def history= Action {
     Ok(views.html.history())
   }
