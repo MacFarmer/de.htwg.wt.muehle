@@ -15,7 +15,7 @@
         </p>
     </div>
     <h3>Here you can go through the world ranking</h3>
-    <div id='showWR'>test</div><br>
+    <div id='showWR'></div><br>
     <input type="button" onclick="previous()" value="<<">
     <input type="button" onclick="next()" value=">>">
 </div>
