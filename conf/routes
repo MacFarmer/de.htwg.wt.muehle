@@ -4,23 +4,31 @@
 
 # Controller for Sudoku
 
-GET        /                    controllers.MuehleController.about
+GET        /                        controllers.MuehleController.about
 
-GET        /game                controllers.MuehleController.muehle
+GET        /game                    controllers.MuehleController.muehle
 
-GET        /new                 controllers.MuehleController.newGame
+GET        /new                     controllers.MuehleController.newGame
 
-GET        /game/:field         controllers.MuehleController.place(field: Int)
+GET        /game/:field             controllers.MuehleController.place(field: Int)
 
-GET        /undo                controllers.MuehleController.undo
+GET        /move/:field1/:field2    controllers.MuehleController.move(field1: Int, field2: Int)
 
-GET        /redo                controllers.MuehleController.redo
+GET        /remove/:field           controllers.MuehleController.remove(field: Int)
 
-GET        /save               controllers.MuehleController.save
+GET        /undo                    controllers.MuehleController.undo
 
-GET        /load                controllers.MuehleController.load
+GET        /redo                    controllers.MuehleController.redo
 
-GET        /history             controllers.MuehleController.history
+GET        /save                    controllers.MuehleController.save
+
+GET        /load                    controllers.MuehleController.load
+
+GET        /history                 controllers.MuehleController.history
+
+GET        /json                    controllers.MuehleController.toJson
+
+GET        /websocket               controllers.MuehleController.socket
 
 GET        /presence             controllers.MuehleController.presence
 
