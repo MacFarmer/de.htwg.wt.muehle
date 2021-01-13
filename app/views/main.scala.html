@@ -13,6 +13,7 @@
             @* Here's where we render the page title `String`. *@
             <title>@title</title>
             <meta charset="utf-8">
+            <link rel="manifest" href="manifest.json" crossorigin="use-credentials"/>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" >
             <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")" >
@@ -24,12 +25,17 @@
         @* And here's where we render the `Html` object containing
         * the page content. *@
 
-        <script src="@routes.Assets.versioned("javascripts/jquery-3.2.1.min.js")"></script>
-        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" ></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+                @*<script src="@routes.Assets.versioned("javascripts/jquery-3.2.1.min.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/popper.js")"></script>
+                <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" ></script>
+        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" ></script>*@
+                <script src="@routes.Assets.versioned("javascripts/sw.js")"></script>
         @content
         <script src="@routes.Assets.versioned("javascripts/muehle.js")"></script>
-        <script src="@routes.Assets.versioned("javascripts/popper.js")"></script>
-
 <body>
 
 <div class="footer">© 2020 Copyright:

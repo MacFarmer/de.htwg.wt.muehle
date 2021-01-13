@@ -1,0 +1,344 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgb(255, 245, 158);
+  min-width: 750px;
+}
+
+.player-names-input {
+  margin-bottom: 15px;
+}
+
+.name-input {
+  margin-bottom: 10px;
+}
+
+.winner {
+  font-size: 50px;
+  margin-top: 10%;
+  animation: blink-winner 0.5s 3;
+  color: red;
+}
+
+@-webkit-keyframes blink-winner {
+  0%, 50% {
+    color: rgb(255, 245, 158);
+  }
+}
+
+.play-again {
+  margin-top: 10%;
+}
+
+.outer-box {
+  border-width: 5px;
+  border-color: black;
+  height: 350px;
+  width: 350px;
+  border-style: solid;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.middle-box {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  width: 66%;
+  height: 66%;
+  position: relative;
+  margin: auto;
+  top: 17%;
+  box-sizing: border-box;
+}
+
+.inner-box {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 25%;
+  box-sizing: border-box;
+  background-color: rgb(255, 245, 158);;
+}
+
+.quarter-box-top-left {
+  border-right-width: 5px;
+  border-right-color: black;
+  border-right-style: solid;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 2.5px;
+  margin-top: 2.5px;
+}
+
+.quarter-box-bottom-left {
+  border-right-width: 5px;
+  border-right-color: black;
+  border-right-style: solid;
+  width: 50%;
+  height: 48.9%;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 2.5px;
+}
+
+.quarter-box-right {
+  border-top-width: 5px;
+  border-top-color: black;
+  border-top-style: solid;
+  width: 40%;
+  height: 50%;
+  position: relative;
+  float: right;
+  box-sizing: border-box;
+  bottom: 5px;
+}
+
+.bottom-border {
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+
+.game-container {
+  height: 350px;
+  width: 350px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.controls {
+  clear: both;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .game-container {
+    height: 400px;
+    width: 400px;
+  }
+
+  .outer-box {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.node {
+  position: absolute;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  background: #cac7c7;
+}
+
+.node:hover {
+  cursor: pointer;
+}
+
+.player-1 {
+  background-color: blue;
+}
+
+.player-2 {
+  background-color: red;
+}
+
+.selected {
+  animation: blink-node 1s infinite;
+}
+
+.selected-mill {
+  animation: blink-node 1s 3;
+}
+
+.blink-title {
+  animation: blink-title 0.5s 3;
+}
+
+@-webkit-keyframes blink-title {
+  0%, 50% {
+    color: rgb(255, 245, 158);
+  }
+}
+
+.blink-messages {
+  animation: blink-messages 1s 3;
+}
+
+@-webkit-keyframes blink-messages {
+  0%, 50% {
+    background-color: #dd97e8;
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 1.0s steps(40, end)
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@-webkit-keyframes blink-node {
+  0%, 50% {
+    background-color: #cac7c7;
+  }
+}
+
+#node-1, #node-4, #node-7 {
+  top: -15px;
+  left: -15px;
+}
+
+#node-2 {
+  left: 46%;
+  top: -15px;
+}
+
+#node-5 {
+  left: 44%;
+  top: -15px;
+}
+
+#node-3, #node-6 {
+  left: 96%;
+  top: -15px;
+}
+
+#node-8 {
+  left: 38%;
+  top: -15px;
+}
+
+#node-9 {
+  left: 90%;
+  top: -15px;
+}
+
+#node-10 {
+  left: -15px;
+  top: 46%;
+}
+
+#node-11 {
+  left: -15px;
+  top: 44%;
+}
+
+#node-12 {
+  left: -15px;
+  top: 37%;
+}
+
+#node-13 {
+  left: 90%;
+  top: 37%;
+}
+
+#node-14 {
+  left: 96%;
+  top: 44%;
+}
+
+#node-15 {
+  left: 96%;
+  top: 46%;
+}
+
+#node-16 {
+  left: -15px;
+  top: 90%;
+}
+
+#node-17 {
+  left: 38%;
+  top: 90%;
+}
+
+#node-18 {
+  left: 90%;
+  top: 90%;
+}
+
+#node-22, #node-19 {
+  left: -15px;
+  top: 96%;
+}
+
+#node-23 {
+  top: 96%;
+  left: 46%;
+}
+
+#node-20 {
+  top: 96%;
+  left: 44%;
+}
+
+#node-24, #node-21 {
+  top: 96%;
+  left: 96%;
+}
+
+.messages {
+  border-width: 3px;
+  border-radius: 20px;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+.player-stats-1 .player-name {
+  color: blue;
+  font-size: 22px;
+}
+
+.player-stats-2 .player-name {
+  color: red;
+  font-size: 22px;
+}
+
+.player-1-piece {
+  border-radius: 50%;
+  background-color: blue;
+  border-width: 5px;
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.player-2-piece {
+  border-radius: 50%;
+  background-color: red;
+  border-width: 5px;
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.buttons {
+  margin-top: 50px;
+}

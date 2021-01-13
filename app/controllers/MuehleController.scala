@@ -22,6 +22,11 @@ class MuehleController @Inject()(cc: ControllerComponents)(fileIO: FileIO) (impl
     Ok(views.html.index())
   }
 
+  def getOffline = Action {
+    implicit request: Request[AnyContent] =>
+      Ok(views.html.offline())
+  }
+
   def muehle = Action {
     Ok(views.html.muehle(gameController))
   }
